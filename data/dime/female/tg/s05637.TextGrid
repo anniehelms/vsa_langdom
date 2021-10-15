@@ -1,0 +1,152 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.854421768707483 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phone" 
+        xmin = 0 
+        xmax = 1.854421768707483 
+        intervals: size = 22 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.06 
+            text = "" 
+        intervals [2]:
+            xmin = 0.06 
+            xmax = 0.145 
+            text = "d" 
+        intervals [3]:
+            xmin = 0.145 
+            xmax = 0.231 
+            text = "u" 
+        intervals [4]:
+            xmin = 0.231 
+            xmax = 0.289 
+            text = "l" 
+        intervals [5]:
+            xmin = 0.289 
+            xmax = 0.413 
+            text = "s" 
+        intervals [6]:
+            xmin = 0.413 
+            xmax = 0.55 
+            text = "e" 
+        intervals [7]:
+            xmin = 0.55 
+            xmax = 0.602 
+            text = ".bn" 
+        intervals [8]:
+            xmin = 0.602 
+            xmax = 0.675 
+            text = "a" 
+        intervals [9]:
+            xmin = 0.675 
+            xmax = 0.753 
+            text = "l" 
+        intervals [10]:
+            xmin = 0.753 
+            xmax = 0.834 
+            text = "a" 
+        intervals [11]:
+            xmin = 0.834 
+            xmax = 0.895 
+            text = "b" 
+        intervals [12]:
+            xmin = 0.895 
+            xmax = 0.989 
+            text = "o" 
+        intervals [13]:
+            xmin = 0.989 
+            xmax = 1.102 
+            text = "k" 
+        intervals [14]:
+            xmin = 1.102 
+            xmax = 1.224 
+            text = "a" 
+        intervals [15]:
+            xmin = 1.224 
+            xmax = 1.278 
+            text = ".bn" 
+        intervals [16]:
+            xmin = 1.278 
+            xmax = 1.36 
+            text = "a" 
+        intervals [17]:
+            xmin = 1.36 
+            xmax = 1.477 
+            text = "l" 
+        intervals [18]:
+            xmin = 1.477 
+            xmax = 1.535 
+            text = "r" 
+        intervals [19]:
+            xmin = 1.535 
+            xmax = 1.599 
+            text = "e" 
+        intervals [20]:
+            xmin = 1.599 
+            xmax = 1.79 
+            text = "i" 
+        intervals [21]:
+            xmin = 1.79 
+            xmax = 1.854 
+            text = ".sil" 
+        intervals [22]:
+            xmin = 1.854 
+            xmax = 1.854421768707483 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 1.854421768707483 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.06 
+            text = "" 
+        intervals [2]:
+            xmin = 0.06 
+            xmax = 0.55 
+            text = "dulce" 
+        intervals [3]:
+            xmin = 0.55 
+            xmax = 0.602 
+            text = ".bn" 
+        intervals [4]:
+            xmin = 0.602 
+            xmax = 0.675 
+            text = "a" 
+        intervals [5]:
+            xmin = 0.675 
+            xmax = 0.834 
+            text = "la" 
+        intervals [6]:
+            xmin = 0.834 
+            xmax = 1.224 
+            text = "boca" 
+        intervals [7]:
+            xmin = 1.224 
+            xmax = 1.278 
+            text = ".bn" 
+        intervals [8]:
+            xmin = 1.278 
+            xmax = 1.477 
+            text = "al" 
+        intervals [9]:
+            xmin = 1.477 
+            xmax = 1.79 
+            text = "rey" 
+        intervals [10]:
+            xmin = 1.79 
+            xmax = 1.854 
+            text = ".sil" 
+        intervals [11]:
+            xmin = 1.854 
+            xmax = 1.854421768707483 
+            text = "" 

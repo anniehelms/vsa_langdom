@@ -1,0 +1,204 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.967437641723356 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phone" 
+        xmin = 0 
+        xmax = 2.967437641723356 
+        intervals: size = 34 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.102 
+            text = "" 
+        intervals [2]:
+            xmin = 0.102 
+            xmax = 0.247 
+            text = "m" 
+        intervals [3]:
+            xmin = 0.247 
+            xmax = 0.336 
+            text = "u" 
+        intervals [4]:
+            xmin = 0.336 
+            xmax = 0.384 
+            text = "r(" 
+        intervals [5]:
+            xmin = 0.384 
+            xmax = 0.479 
+            text = "i" 
+        intervals [6]:
+            xmin = 0.479 
+            xmax = 0.708 
+            text = "o" 
+        intervals [7]:
+            xmin = 0.708 
+            xmax = 0.81 
+            text = "i" 
+        intervals [8]:
+            xmin = 0.81 
+            xmax = 0.887 
+            text = "l" 
+        intervals [9]:
+            xmin = 0.887 
+            xmax = 0.957 
+            text = "e" 
+        intervals [10]:
+            xmin = 0.957 
+            xmax = 1.028 
+            text = "n" 
+        intervals [11]:
+            xmin = 1.028 
+            xmax = 1.106 
+            text = "t" 
+        intervals [12]:
+            xmin = 1.106 
+            xmax = 1.159 
+            text = "e" 
+        intervals [13]:
+            xmin = 1.159 
+            xmax = 1.235 
+            text = "r" 
+        intervals [14]:
+            xmin = 1.235 
+            xmax = 1.333 
+            text = "a" 
+        intervals [15]:
+            xmin = 1.333 
+            xmax = 1.36 
+            text = "r(" 
+        intervals [16]:
+            xmin = 1.36 
+            xmax = 1.442 
+            text = "o" 
+        intervals [17]:
+            xmin = 1.442 
+            xmax = 1.51 
+            text = "n" 
+        intervals [18]:
+            xmin = 1.51 
+            xmax = 1.57 
+            text = "a" 
+        intervals [19]:
+            xmin = 1.57 
+            xmax = 1.63 
+            text = "l" 
+        intervals [20]:
+            xmin = 1.63 
+            xmax = 1.743 
+            text = "p" 
+        intervals [21]:
+            xmin = 1.743 
+            xmax = 1.788 
+            text = "i" 
+        intervals [22]:
+            xmin = 1.788 
+            xmax = 1.848 
+            text = "e" 
+        intervals [23]:
+            xmin = 1.848 
+            xmax = 1.918 
+            text = "d" 
+        intervals [24]:
+            xmin = 1.918 
+            xmax = 2 
+            text = ".0" 
+        intervals [25]:
+            xmin = 2 
+            xmax = 2.086 
+            text = "" 
+        intervals [26]:
+            xmin = 2.086 
+            xmax = 2.145 
+            text = "n" 
+        intervals [27]:
+            xmin = 2.145 
+            xmax = 2.27 
+            text = "s" 
+        intervals [28]:
+            xmin = 2.27 
+            xmax = 2.31 
+            text = "i" 
+        intervals [29]:
+            xmin = 2.31 
+            xmax = 2.442 
+            text = "p" 
+        intervals [30]:
+            xmin = 2.442 
+            xmax = 2.486 
+            text = "r(" 
+        intervals [31]:
+            xmin = 2.486 
+            xmax = 2.596 
+            text = "e" 
+        intervals [32]:
+            xmin = 2.596 
+            xmax = 2.838 
+            text = "s" 
+        intervals [33]:
+            xmin = 2.838 
+            xmax = 2.967 
+            text = ".bn" 
+        intervals [34]:
+            xmin = 2.967 
+            xmax = 2.967437641723356 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 2.967437641723356 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.102 
+            text = "" 
+        intervals [2]:
+            xmin = 0.102 
+            xmax = 0.708 
+            text = "murio_7" 
+        intervals [3]:
+            xmin = 0.708 
+            xmax = 0.81 
+            text = "y" 
+        intervals [4]:
+            xmin = 0.81 
+            xmax = 0.887 
+            text = "le" 
+        intervals [5]:
+            xmin = 0.887 
+            xmax = 1.51 
+            text = "enterraron" 
+        intervals [6]:
+            xmin = 1.51 
+            xmax = 1.63 
+            text = "al" 
+        intervals [7]:
+            xmin = 1.63 
+            xmax = 1.848 
+            text = "pie" 
+        intervals [8]:
+            xmin = 1.848 
+            xmax = 2 
+            text = ".0" 
+        intervals [9]:
+            xmin = 2 
+            xmax = 2.145 
+            text = "" 
+        intervals [10]:
+            xmin = 2.145 
+            xmax = 2.838 
+            text = "cipre_7s" 
+        intervals [11]:
+            xmin = 2.838 
+            xmax = 2.967 
+            text = ".bn" 
+        intervals [12]:
+            xmin = 2.967 
+            xmax = 2.967437641723356 
+            text = "" 
