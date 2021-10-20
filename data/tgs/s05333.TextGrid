@@ -1,0 +1,336 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.8321995464852607 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phone" 
+        xmin = 0 
+        xmax = 3.8321995464852607 
+        intervals: size = 64 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.076 
+            text = "" 
+        intervals [2]:
+            xmin = 0.076 
+            xmax = 0.121 
+            text = "m" 
+        intervals [3]:
+            xmin = 0.121 
+            xmax = 0.177 
+            text = "e" 
+        intervals [4]:
+            xmin = 0.177 
+            xmax = 0.226 
+            text = "n" 
+        intervals [5]:
+            xmin = 0.226 
+            xmax = 0.285 
+            text = "s" 
+        intervals [6]:
+            xmin = 0.285 
+            xmax = 0.363 
+            text = "i" 
+        intervals [7]:
+            xmin = 0.363 
+            xmax = 0.417 
+            text = "n" 
+        intervals [8]:
+            xmin = 0.417 
+            xmax = 0.479 
+            text = "e" 
+        intervals [9]:
+            xmin = 0.479 
+            xmax = 0.549 
+            text = "s" 
+        intervals [10]:
+            xmin = 0.549 
+            xmax = 0.598 
+            text = "u" 
+        intervals [11]:
+            xmin = 0.598 
+            xmax = 0.634 
+            text = "s" 
+        intervals [12]:
+            xmin = 0.634 
+            xmax = 0.715 
+            text = "p" 
+        intervals [13]:
+            xmin = 0.715 
+            xmax = 0.745 
+            text = "r(" 
+        intervals [14]:
+            xmin = 0.745 
+            xmax = 0.78 
+            text = "i" 
+        intervals [15]:
+            xmin = 0.78 
+            xmax = 0.817 
+            text = "n" 
+        intervals [16]:
+            xmin = 0.817 
+            xmax = 0.877 
+            text = "s" 
+        intervals [17]:
+            xmin = 0.877 
+            xmax = 0.917 
+            text = "i" 
+        intervals [18]:
+            xmin = 0.917 
+            xmax = 1.004 
+            text = "p" 
+        intervals [19]:
+            xmin = 1.004 
+            xmax = 1.064 
+            text = "a" 
+        intervals [20]:
+            xmin = 1.064 
+            xmax = 1.111 
+            text = "l" 
+        intervals [21]:
+            xmin = 1.111 
+            xmax = 1.187 
+            text = "e" 
+        intervals [22]:
+            xmin = 1.187 
+            xmax = 1.26 
+            text = "s" 
+        intervals [23]:
+            xmin = 1.26 
+            xmax = 1.325 
+            text = ".bn" 
+        intervals [24]:
+            xmin = 1.325 
+            xmax = 1.433 
+            text = "a" 
+        intervals [25]:
+            xmin = 1.433 
+            xmax = 1.465 
+            text = "r(" 
+        intervals [26]:
+            xmin = 1.465 
+            xmax = 1.515 
+            text = "e" 
+        intervals [27]:
+            xmin = 1.515 
+            xmax = 1.576 
+            text = "e" 
+        intervals [28]:
+            xmin = 1.576 
+            xmax = 1.639 
+            text = "s" 
+        intervals [29]:
+            xmin = 1.639 
+            xmax = 1.668 
+            text = "d" 
+        intervals [30]:
+            xmin = 1.668 
+            xmax = 1.714 
+            text = "e" 
+        intervals [31]:
+            xmin = 1.714 
+            xmax = 1.777 
+            text = "t" 
+        intervals [32]:
+            xmin = 1.777 
+            xmax = 1.81 
+            text = "r(" 
+        intervals [33]:
+            xmin = 1.81 
+            xmax = 1.877 
+            text = "a" 
+        intervals [34]:
+            xmin = 1.877 
+            xmax = 1.923 
+            text = "b" 
+        intervals [35]:
+            xmin = 1.923 
+            xmax = 2.056 
+            text = "a" 
+        intervals [36]:
+            xmin = 2.056 
+            xmax = 2.146 
+            text = "x" 
+        intervals [37]:
+            xmin = 2.146 
+            xmax = 2.221 
+            text = "o" 
+        intervals [38]:
+            xmin = 2.221 
+            xmax = 2.304 
+            text = ".sil" 
+        intervals [39]:
+            xmin = 2.304 
+            xmax = 2.413 
+            text = "e" 
+        intervals [40]:
+            xmin = 2.413 
+            xmax = 2.51 
+            text = "i" 
+        intervals [41]:
+            xmin = 2.51 
+            xmax = 2.554 
+            text = "n" 
+        intervals [42]:
+            xmin = 2.554 
+            xmax = 2.611 
+            text = "t" 
+        intervals [43]:
+            xmin = 2.611 
+            xmax = 2.663 
+            text = "e" 
+        intervals [44]:
+            xmin = 2.663 
+            xmax = 2.707 
+            text = "r(" 
+        intervals [45]:
+            xmin = 2.707 
+            xmax = 2.769 
+            text = "e" 
+        intervals [46]:
+            xmin = 2.769 
+            xmax = 2.853 
+            text = "s" 
+        intervals [47]:
+            xmin = 2.853 
+            xmax = 2.913 
+            text = "e" 
+        intervals [48]:
+            xmin = 2.913 
+            xmax = 2.976 
+            text = "s" 
+        intervals [49]:
+            xmin = 2.976 
+            xmax = 3.002 
+            text = "d" 
+        intervals [50]:
+            xmin = 3.002 
+            xmax = 3.066 
+            text = "i" 
+        intervals [51]:
+            xmin = 3.066 
+            xmax = 3.117 
+            text = "m" 
+        intervals [52]:
+            xmin = 3.117 
+            xmax = 3.15 
+            text = "b" 
+        intervals [53]:
+            xmin = 3.15 
+            xmax = 3.186 
+            text = "e" 
+        intervals [54]:
+            xmin = 3.186 
+            xmax = 3.228 
+            text = "s" 
+        intervals [55]:
+            xmin = 3.228 
+            xmax = 3.29 
+            text = "t" 
+        intervals [56]:
+            xmin = 3.29 
+            xmax = 3.368 
+            text = "i" 
+        intervals [57]:
+            xmin = 3.368 
+            xmax = 3.414 
+            text = "g" 
+        intervals [58]:
+            xmin = 3.414 
+            xmax = 3.485 
+            text = "a" 
+        intervals [59]:
+            xmin = 3.485 
+            xmax = 3.585 
+            text = "s" 
+        intervals [60]:
+            xmin = 3.585 
+            xmax = 3.622 
+            text = "i" 
+        intervals [61]:
+            xmin = 3.622 
+            xmax = 3.682 
+            text = "o" 
+        intervals [62]:
+            xmin = 3.682 
+            xmax = 3.759 
+            text = "n" 
+        intervals [63]:
+            xmin = 3.759 
+            xmax = 3.832 
+            text = ".sil" 
+        intervals [64]:
+            xmin = 3.832 
+            xmax = 3.8321995464852607 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 3.8321995464852607 
+        intervals: size = 15 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.076 
+            text = "" 
+        intervals [2]:
+            xmin = 0.076 
+            xmax = 0.479 
+            text = "mencione" 
+        intervals [3]:
+            xmin = 0.479 
+            xmax = 0.634 
+            text = "sus" 
+        intervals [4]:
+            xmin = 0.634 
+            xmax = 1.26 
+            text = "principales" 
+        intervals [5]:
+            xmin = 1.26 
+            xmax = 1.325 
+            text = ".bn" 
+        intervals [6]:
+            xmin = 1.325 
+            xmax = 1.639 
+            text = "a_7reas" 
+        intervals [7]:
+            xmin = 1.639 
+            xmax = 1.714 
+            text = "de" 
+        intervals [8]:
+            xmin = 1.714 
+            xmax = 2.221 
+            text = "trabajo" 
+        intervals [9]:
+            xmin = 2.221 
+            xmax = 2.304 
+            text = ".sil" 
+        intervals [10]:
+            xmin = 2.304 
+            xmax = 2.413 
+            text = "e" 
+        intervals [11]:
+            xmin = 2.413 
+            xmax = 2.976 
+            text = "intereses" 
+        intervals [12]:
+            xmin = 2.976 
+            xmax = 3.002 
+            text = "de" 
+        intervals [13]:
+            xmin = 3.002 
+            xmax = 3.759 
+            text = "investigacio_7n" 
+        intervals [14]:
+            xmin = 3.759 
+            xmax = 3.832 
+            text = ".sil" 
+        intervals [15]:
+            xmin = 3.832 
+            xmax = 3.8321995464852607 
+            text = "" 

@@ -1,0 +1,140 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.409750566893424 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phone" 
+        xmin = 0 
+        xmax = 1.409750566893424 
+        intervals: size = 21 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.086 
+            text = "" 
+        intervals [2]:
+            xmin = 0.086 
+            xmax = 0.187 
+            text = "e" 
+        intervals [3]:
+            xmin = 0.187 
+            xmax = 0.289 
+            text = "s" 
+        intervals [4]:
+            xmin = 0.289 
+            xmax = 0.323 
+            text = "o" 
+        intervals [5]:
+            xmin = 0.323 
+            xmax = 0.361 
+            text = "e" 
+        intervals [6]:
+            xmin = 0.361 
+            xmax = 0.405 
+            text = "s" 
+        intervals [7]:
+            xmin = 0.405 
+            xmax = 0.457 
+            text = "l" 
+        intervals [8]:
+            xmin = 0.457 
+            xmax = 0.517 
+            text = "o" 
+        intervals [9]:
+            xmin = 0.517 
+            xmax = 0.576 
+            text = "k" 
+        intervals [10]:
+            xmin = 0.576 
+            xmax = 0.598 
+            text = "e" 
+        intervals [11]:
+            xmin = 0.598 
+            xmax = 0.667 
+            text = "o" 
+        intervals [12]:
+            xmin = 0.667 
+            xmax = 0.72 
+            text = "k" 
+        intervals [13]:
+            xmin = 0.72 
+            xmax = 0.784 
+            text = "u" 
+        intervals [14]:
+            xmin = 0.784 
+            xmax = 0.855 
+            text = "r" 
+        intervals [15]:
+            xmin = 0.855 
+            xmax = 0.892 
+            text = "e" 
+        intervals [16]:
+            xmin = 0.892 
+            xmax = 0.999 
+            text = "a" 
+        intervals [17]:
+            xmin = 0.999 
+            xmax = 1.129 
+            text = "o" 
+        intervals [18]:
+            xmin = 1.129 
+            xmax = 1.168 
+            text = "r(" 
+        intervals [19]:
+            xmin = 1.168 
+            xmax = 1.356 
+            text = "a" 
+        intervals [20]:
+            xmin = 1.356 
+            xmax = 1.409 
+            text = ".sil" 
+        intervals [21]:
+            xmin = 1.409 
+            xmax = 1.409750566893424 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 1.409750566893424 
+        intervals: size = 9 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.086 
+            text = "" 
+        intervals [2]:
+            xmin = 0.086 
+            xmax = 0.323 
+            text = "eso" 
+        intervals [3]:
+            xmin = 0.323 
+            xmax = 0.405 
+            text = "es" 
+        intervals [4]:
+            xmin = 0.405 
+            xmax = 0.517 
+            text = "lo" 
+        intervals [5]:
+            xmin = 0.517 
+            xmax = 0.598 
+            text = "que" 
+        intervals [6]:
+            xmin = 0.598 
+            xmax = 0.892 
+            text = "ocurre" 
+        intervals [7]:
+            xmin = 0.892 
+            xmax = 1.356 
+            text = "ahora" 
+        intervals [8]:
+            xmin = 1.356 
+            xmax = 1.409 
+            text = ".sil" 
+        intervals [9]:
+            xmin = 1.409 
+            xmax = 1.409750566893424 
+            text = "" 
