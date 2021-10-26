@@ -1,0 +1,160 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.4699773242630385 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phone" 
+        xmin = 0 
+        xmax = 1.4699773242630385 
+        intervals: size = 25 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.041 
+            text = "" 
+        intervals [2]:
+            xmin = 0.041 
+            xmax = 0.105 
+            text = "k" 
+        intervals [3]:
+            xmin = 0.105 
+            xmax = 0.171 
+            text = "e" 
+        intervals [4]:
+            xmin = 0.171 
+            xmax = 0.244 
+            text = "e" 
+        intervals [5]:
+            xmin = 0.244 
+            xmax = 0.31 
+            text = "s" 
+        intervals [6]:
+            xmin = 0.31 
+            xmax = 0.342 
+            text = "l" 
+        intervals [7]:
+            xmin = 0.342 
+            xmax = 0.379 
+            text = "o" 
+        intervals [8]:
+            xmin = 0.379 
+            xmax = 0.459 
+            text = "p" 
+        intervals [9]:
+            xmin = 0.459 
+            xmax = 0.5 
+            text = "r(" 
+        intervals [10]:
+            xmin = 0.5 
+            xmax = 0.531 
+            text = "i" 
+        intervals [11]:
+            xmin = 0.531 
+            xmax = 0.597 
+            text = "m" 
+        intervals [12]:
+            xmin = 0.597 
+            xmax = 0.654 
+            text = "e" 
+        intervals [13]:
+            xmin = 0.654 
+            xmax = 0.673 
+            text = "r(" 
+        intervals [14]:
+            xmin = 0.673 
+            xmax = 0.73 
+            text = "o" 
+        intervals [15]:
+            xmin = 0.73 
+            xmax = 0.818 
+            text = "k" 
+        intervals [16]:
+            xmin = 0.818 
+            xmax = 0.855 
+            text = "e" 
+        intervals [17]:
+            xmin = 0.855 
+            xmax = 0.934 
+            text = "s" 
+        intervals [18]:
+            xmin = 0.934 
+            xmax = 1.001 
+            text = "e" 
+        intervals [19]:
+            xmin = 1.001 
+            xmax = 1.1 
+            text = "f" 
+        intervals [20]:
+            xmin = 1.1 
+            xmax = 1.174 
+            text = "o" 
+        intervals [21]:
+            xmin = 1.174 
+            xmax = 1.2 
+            text = "r(" 
+        intervals [22]:
+            xmin = 1.2 
+            xmax = 1.291 
+            text = "m" 
+        intervals [23]:
+            xmin = 1.291 
+            xmax = 1.392 
+            text = "a" 
+        intervals [24]:
+            xmin = 1.392 
+            xmax = 1.469 
+            text = ".sil" 
+        intervals [25]:
+            xmin = 1.469 
+            xmax = 1.4699773242630385 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 1.4699773242630385 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.041 
+            text = "" 
+        intervals [2]:
+            xmin = 0.041 
+            xmax = 0.171 
+            text = "que_7" 
+        intervals [3]:
+            xmin = 0.171 
+            xmax = 0.31 
+            text = "es" 
+        intervals [4]:
+            xmin = 0.31 
+            xmax = 0.379 
+            text = "lo" 
+        intervals [5]:
+            xmin = 0.379 
+            xmax = 0.73 
+            text = "primero" 
+        intervals [6]:
+            xmin = 0.73 
+            xmax = 0.855 
+            text = "que" 
+        intervals [7]:
+            xmin = 0.855 
+            xmax = 1.001 
+            text = "se" 
+        intervals [8]:
+            xmin = 1.001 
+            xmax = 1.392 
+            text = "forma" 
+        intervals [9]:
+            xmin = 1.392 
+            xmax = 1.469 
+            text = ".sil" 
+        intervals [10]:
+            xmin = 1.469 
+            xmax = 1.4699773242630385 
+            text = "" 
