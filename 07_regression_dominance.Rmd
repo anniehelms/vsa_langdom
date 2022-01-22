@@ -1,0 +1,411 @@
+---
+title: "Analysis of Spanish and English Vowel Space Areas"
+author: "Annie Helms (annie_helms@berkeley.edu)"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, dev = "cairo_pdf")
+#options(scipen = 999) # avoid scientific notation
+```
+
+Library packages
+
+```{r message = FALSE, warning = FALSE}
+library(lmerTest) #mixed effects linear regression
+library(dplyr)
+library(kableExtra) # formats dataframes in html output
+library(emmeans) # Tukey tests
+library(ggplot2)
+library(r2glmm)
+```
+
+Set working directory and import data set of areas by speaker in the corpus.
+
+```{r message = FALSE, echo = FALSE}
+setwd("/Users/atarv/Box Sync/PhD/github/vsa_langdom/")
+```
+
+```{r}
+spa = read.csv("data/spa_areas_dominance.csv", 
+                  stringsAsFactors = TRUE)
+kbl(head(spa), table.attr = "style = \"color: black;\"") %>% # piped to allow for kable formatting
+  kable_styling(bootstrap_options = c("striped", # alternates row color in table
+                                      "hover", # rows are highlighted when hovered over
+                                      "condensed", # row height is condensed
+                                      "responsive")) %>% # horizontal scrolling across table
+  scroll_box(width = "100%")
+```
+
+```{r}
+dim(spa)
+```
+
+Scale avg duration, area, language dominance.
+
+```{r}
+spa$Area_scale = scale(spa$Area)
+spa$Dominance_scale = scale(spa$Dominance)
+spa$avg_dur_scale = scale(spa$avg_dur)
+spa$is_stress = as.factor(spa$is_stress)
+```
+
+Create subsets of data for each cutoff
+
+```{r}
+cut_10 = spa %>%
+  filter(Cutoff==0.1)
+cut_15 = spa %>%
+  filter(Cutoff==0.15)
+cut_20 = spa %>%
+  filter(Cutoff==0.2)
+cut_25 = spa %>%
+  filter(Cutoff==0.25)
+cut_30 = spa %>%
+  filter(Cutoff==0.3)
+```
+
+Set up mixed effects linear regression, with DV of area, IV of stress, and random intercept of speaker. Run for each cutoff level.
+
+```{r}
+# submit to mixed effects linear regression model
+model_10 = lmer(Area_scale ~ Dominance_scale * is_stress + avg_dur_scale + (1|Participant), 
+                data = cut_10, REML = FALSE)
+summary(model_10)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_15 = lmer(Area_scale ~ Dominance_scale * is_stress + avg_dur_scale + (1|Participant), 
+                data = cut_15, REML = FALSE)
+summary(model_15)
+```
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_20 = lmer(Area_scale ~ Dominance_scale * is_stress + avg_dur_scale + (1|Participant), 
+                data = cut_20, REML = FALSE)
+summary(model_20)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_25 = lmer(Area_scale ~ Dominance_scale * is_stress + avg_dur_scale + (1|Participant), 
+                data = cut_25, REML = FALSE)
+summary(model_25)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_30 = lmer(Area_scale ~ Dominance_scale * is_stress + avg_dur_scale + (1|Participant), 
+                data = cut_30, REML = FALSE)
+summary(model_30)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+
+# Now just CBAS speakers
+
+```{r}
+cbas = read.csv("data/cbas_areas_dominance.csv", 
+                  stringsAsFactors = TRUE)
+kbl(head(cbas), table.attr = "style = \"color: black;\"") %>% # piped to allow for kable formatting
+  kable_styling(bootstrap_options = c("striped", # alternates row color in table
+                                      "hover", # rows are highlighted when hovered over
+                                      "condensed", # row height is condensed
+                                      "responsive")) %>% # horizontal scrolling across table
+  scroll_box(width = "100%")
+```
+
+```{r}
+dim(cbas)
+```
+
+Scale avg duration, area, language dominance.
+
+```{r}
+cbas$Area_scale = scale(cbas$Area)
+cbas$Dominance_scale = scale(cbas$Dominance)
+cbas$avg_dur_scale = scale(cbas$avg_dur)
+cbas$is_stress = as.factor(cbas$is_stress)
+```
+
+Create subsets of data for each cutoff
+
+```{r}
+cut_10 = cbas %>%
+  filter(Cutoff==0.1)
+cut_15 = cbas %>%
+  filter(Cutoff==0.15)
+cut_20 = cbas %>%
+  filter(Cutoff==0.2)
+cut_25 = cbas %>%
+  filter(Cutoff==0.25)
+cut_30 = cbas %>%
+  filter(Cutoff==0.3)
+```
+
+Set up mixed effects linear regression, with DV of area, IV of stress, and random intercept of speaker. Run for each cutoff level.
+
+```{r}
+# submit to mixed effects linear regression model
+model_10 = lmer(Area_scale ~ Dominance_scale * is_stress * Language + avg_dur_scale * Language + (1|Participant), 
+                data = cut_10, REML = FALSE)
+summary(model_10)
+```
+
+Effect sizes:
+
+```{r}
+r2beta(model_10, method ="nsj")
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+Post-hoc:
+
+```{r}
+emmeans(model_10, list(pairwise ~ is_stress * Language), adjust="tukey")
+
+ems = emmeans(model_10, c("is_stress","Language"), infer = c(T, T))
+
+# Cohens D effect size
+emmeans::eff_size(ems, sigma = sigma(model_10), edf = df.residual(model_10))
+```
+
+Stress is only a predictor of English vowel space area (i.e. not Spanish) and stressed English is significantly larger than stressed Spanish. Increasing English dominance does not affect stress patterns in Spanish or English.
+
+```{r}
+# submit to mixed effects linear regression model
+model_15 = lmer(Area_scale ~ Dominance_scale * is_stress * Language + avg_dur_scale * Language + (1|Participant), 
+                data = cut_15, REML = FALSE)
+summary(model_15)
+```
+According to the model output above, neither avg_dur (approaching significance) or language dominance is a significant predictor of vowel space area.
+
+Effect sizes:
+
+```{r}
+r2beta(model_15, method ="nsj")
+```
+
+Post-hoc:
+
+```{r}
+emmeans(model_15, list(pairwise ~ is_stress * Language), adjust="tukey")
+
+ems = emmeans(model_15, c("is_stress","Language"), infer = c(T, T))
+
+# Cohens D effect size
+emmeans::eff_size(ems, sigma = sigma(model_15), edf = df.residual(model_15))
+```
+
+Stressed English is bigger than stressed Spanish, language dominance has no effect.
+
+```{r}
+# submit to mixed effects linear regression model
+model_20 = lmer(Area_scale ~ Dominance_scale * is_stress * Language + avg_dur_scale * Language + (1|Participant), 
+                data = cut_20, REML = FALSE)
+summary(model_20)
+```
+
+Effect sizes:
+
+```{r}
+r2beta(model_20, method ="nsj")
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+Post-hoc:
+
+```{r}
+emmeans(model_20, list(pairwise ~ is_stress * Language), adjust="tukey")
+
+ems = emmeans(model_20, c("is_stress","Language"), infer = c(T, T))
+
+# Cohens D effect size
+emmeans::eff_size(ems, sigma = sigma(model_20), edf = df.residual(model_20))
+```
+Stressed English bigger than stressed Spanish, language dominance has no effect.
+
+
+
+```{r}
+# submit to mixed effects linear regression model
+model_25 = lmer(Area_scale ~ Dominance_scale * is_stress * Language + avg_dur_scale * Language + (1|Participant), 
+                data = cut_25, REML = FALSE)
+summary(model_25)
+```
+Effect sizes:
+
+```{r}
+r2beta(model_25, method ="nsj")
+```
+
+
+Post-hoc:
+
+```{r}
+emmeans(model_25, list(pairwise ~ is_stress * Language), adjust="tukey")
+
+ems = emmeans(model_25, c("is_stress","Language"), infer = c(T, T))
+
+# Cohens D effect size
+emmeans::eff_size(ems, sigma = sigma(model_25), edf = df.residual(model_25))
+```
+
+English has stress increase, Spanish doesn't. Language dominance doesn't matter.
+
+```{r}
+# submit to mixed effects linear regression model
+model_30 = lmer(Area_scale ~ Dominance_scale * is_stress * Language + avg_dur_scale * Language + (1|Participant), 
+                data = cut_30, REML = FALSE)
+summary(model_30)
+```
+
+```{r}
+r2beta(model_30, method ="nsj")
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+
+Post-hoc:
+
+```{r}
+emmeans(model_30, list(pairwise ~ is_stress * Language), adjust="tukey")
+
+ems = emmeans(model_30, c("is_stress","Language"), infer = c(T, T))
+
+# Cohens D effect size
+emmeans::eff_size(ems, sigma = sigma(model_30), edf = df.residual(model_30))
+```
+
+English has stress, Spanish doesn't, language dominance doesn't matter.
+
+Plot size across cutoff, language dominance, and language
+
+```{r}
+cbas_eng = cut_25 %>%
+  filter(Language=="English")
+cbas_area_plot = ggplot(data = cbas_eng, aes(x = Dominance_scale, y = Area_scale, color = is_stress)) + 
+  geom_point() + 
+  geom_smooth(method = "lm")
+cbas_area_plot
+```
+```{r}
+cbas_spa = cut_25 %>%
+  filter(Language=="Spanish")
+cbas_area_spa_plot = ggplot(data = cbas_spa, aes(x = Dominance_scale, y = Area_scale, color = is_stress)) + 
+  geom_point() + 
+  geom_smooth(method = "lm")
+cbas_area_spa_plot
+```
+
+```{r}
+cbas_plot = ggplot(data = cut_25, aes(x = Dominance_scale, y = Area_scale, color = Language)) + 
+  geom_point() + 
+  geom_smooth(method = "lm")
+cbas_plot
+```
+
+Look at variability across speakers/homogeneity.
+
+
+# Now just Spanish, but divide speakers in Eng exposure (True, False)
+
+```{r}
+spa_cbas = read.csv("data/spa_cbas.csv", 
+                  stringsAsFactors = TRUE)
+kbl(head(spa_cbas), table.attr = "style = \"color: black;\"") %>% # piped to allow for kable formatting
+  kable_styling(bootstrap_options = c("striped", # alternates row color in table
+                                      "hover", # rows are highlighted when hovered over
+                                      "condensed", # row height is condensed
+                                      "responsive")) %>% # horizontal scrolling across table
+  scroll_box(width = "100%")
+```
+
+```{r}
+dim(spa_cbas)
+```
+
+```{r}
+spa_cbas$Area_scale = scale(spa_cbas$Area)
+spa_cbas$avg_dur_scale = scale(spa_cbas$avg_dur)
+spa_cbas$is_stress = as.factor(spa_cbas$is_stress)
+```
+
+Create subsets of data for each cutoff
+
+```{r}
+cut_10 = spa_cbas %>%
+  filter(Cutoff==0.1)
+cut_15 = spa_cbas %>%
+  filter(Cutoff==0.15)
+cut_20 = spa_cbas %>%
+  filter(Cutoff==0.2)
+cut_25 = spa_cbas %>%
+  filter(Cutoff==0.25)
+cut_30 = spa_cbas %>%
+  filter(Cutoff==0.3)
+```
+
+Set up mixed effects linear regression, with DV of area, IV of stress, and random intercept of speaker. Run for each cutoff level.
+
+```{r}
+# submit to mixed effects linear regression model
+model_10 = lmer(Area_scale ~ is_stress * Corpus + avg_dur_scale + (1|Participant),
+                   data = cut_10, REML = FALSE)
+summary(model_10)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_15 = lmer(Area_scale ~ is_stress * Corpus + avg_dur_scale + (1|Participant),
+                   data = cut_15, REML = FALSE)
+summary(model_15)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_20 = lmer(Area_scale ~ is_stress * Corpus + avg_dur_scale + (1|Participant),
+                   data = cut_20, REML = FALSE)
+summary(model_20)
+```
+
+According to the model output above, neither avg_dur, stress, or language dominance is a significant predictor of vowel space area.
+
+```{r}
+# submit to mixed effects linear regression model
+model_25 = lmer(Area_scale ~ is_stress * Corpus + avg_dur_scale + (1|Participant),
+                   data = cut_25, REML = FALSE)
+summary(model_25)
+```
+
+```{r}
+# submit to mixed effects linear regression model
+model_30 = lmer(Area_scale ~ is_stress * Corpus + avg_dur_scale + (1|Participant),
+                   data = cut_30, REML = FALSE)
+summary(model_30)
+```
+
+
